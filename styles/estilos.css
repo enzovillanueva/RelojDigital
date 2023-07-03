@@ -83,3 +83,53 @@ div.reloj span::after{
 #seconds::after{
     content: 'SEGUNDOS';
 }
+
+div.apariencia{
+    position: absolute;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.321);
+    bottom: 20px;
+    left: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+div.apariencia span{
+    background-color: #ff006e;
+    border-radius: 10px;
+    margin: 4px;
+    width: 40px;
+    height: 40px;
+    box-shadow: none;
+}
+
+div.apariencia span:hover{
+    animation-name: aparent;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparent {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+    
+}
+
+#default{
+    background: linear-gradient(45deg, #01283d 40%, #124559, #0a9396);
+}
+
+#autumn{
+    background: linear-gradient(45deg, #e76f51 40%, #f4a261, #e9c46a);
+}
+
+#vice{
+    background: linear-gradient(45deg, #7209b7 40%, #b5179e, #f72585);
+}
