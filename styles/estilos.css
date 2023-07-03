@@ -13,7 +13,7 @@ html{
 }
 
 body{
-    background: linear-gradient(45deg, #000814, #001d3d, #003566);
+    background: linear-gradient(45deg, #01283d 40%, #124559, #0a9396);
 }
 
 div.contenedor{
@@ -21,8 +21,30 @@ div.contenedor{
     height: 160px;
     margin: 120px auto;
     border-radius: 20px;
-    background-color: rgba(0, 0, 255, 0.34);
-    box-shadow: 5px 5px 50px rgba(0, 0, 255, 0.437), -5px -5px 50px rgba(0, 0, 255, 0.437);
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+div.contenedor::before{
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #ff006e;
+    position: absolute;
+    border-radius: 50px;
+    top: 100px;
+    left: 400px;
+}
+
+div.contenedor::after{
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: #2ec4b6;
+    position: absolute;
+    border-radius: 50px;
+    bottom: 420px;
+    right: 400px;
+    z-index: -1;
 }
 
 div.reloj{
@@ -32,7 +54,8 @@ div.reloj{
     border-radius: 20px;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(70px);
+    
 }
 
 div.reloj span{
